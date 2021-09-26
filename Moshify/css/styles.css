@@ -311,3 +311,17 @@ a {
     line-height: 3.5rem;
   }
 }
+/*Media*/
+.media {
+  display: flex;
+  flex-direction: row;
+}
+.media__title {
+  margin-top: 0;
+}
+.media__body {
+  margin-left: 2rem;
+}
+.media__image {
+  margin-top: 1.2rem;
+}
