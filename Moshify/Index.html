@@ -15,26 +15,20 @@
     <title>Document</title>
   </head>
   <body>
-    <section class="block container">
-      <header class="block__header">
-        <h2 class="block__heading">Title</h2>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate
-          enim eligendi assumenda saepe perferendis labore iure iusto corrupti
-          veritatis nisi.
-        </p>
-      </header>
-    </section>
-    <section class="block block--dark block--skewed-left container">
-      <header class="block__header">
-        <h2 class="block__heading">Title</h2>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate
-          enim eligendi assumenda saepe perferendis labore iure iusto corrupti
-          veritatis nisi.
-        </p>
-      </header>
-    </section>
+    <div class="nav collapsible">
+      <a class="nav__brand" href="/">
+        <img src="/Moshify/images/logo.png" alt="Logo" />
+      </a>
+      <svg class="icon icon--acsent nav__toggler">
+        <use xlink:href="images/sprite.svg#menu"></use>
+      </svg>
+      <ul class="list nav__list collapsible__content">
+        <li class="nav__item"><a href="#">Hosting</a></li>
+        <li class="nav__item"><a href="#">VPS</a></li>
+        <li class="nav__item"><a href="#">Domain</a></li>
+        <li class="nav__item"><a href="#">Pricing</a></li>
+      </ul>
+    </div>
     <script src="/main.js"></script>
   </body>
 </html>
