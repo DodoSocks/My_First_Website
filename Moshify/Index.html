@@ -22,9 +22,19 @@
           <p class="hero__tagline">
             Deploy your website in less than 60 seconds.
           </p>
-          <a class="btn btn--acsent btn--stretched" href="#">Get Startrd</a>
+          <a class="btn btn--acsent btn--stretched" href="#">Get Starterd</a>
         </header>
-        <img class="hero__image" src="/Moshify/images/banner.png" alt="" />
+        <picture>
+          <source
+            type="image/webp"
+            srcset="images/banner1x.webp 1x, images/banner@2x.webp 2x"
+          />
+          <source
+            type="image/png"
+            srcset="images/banner.png 1x, images/banner@2x.png 2x"
+          />
+          <img class="hero__image" src="/Moshify/images/banner.png" alt="" />
+        </picture>
       </div>
     </section>
     <script src="/main.js"></script>
