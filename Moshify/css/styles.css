@@ -648,3 +648,11 @@ a {
   max-width: 500px;
   margin: 0 auto;
 }
+/*Features*/
+.features {
+  gap: 4rem;
+  margin: 10rem 0;
+}
+.image__feature {
+  width: 100%;
+}
