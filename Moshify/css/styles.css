@@ -40,6 +40,7 @@ h2 {
 }
 h3 {
   font-size: 3rem;
+  font-weight: 500;
 }
 p {
   margin-top: 0;
@@ -147,6 +148,10 @@ a {
 .icon--small {
   width: 30px;
   height: 30px;
+}
+.icon--large {
+  width: 70px;
+  height: 70px;
 }
 .icon-container {
   background: #f3f9fa;
@@ -529,7 +534,9 @@ a {
   background: black;
   color: #7b858b;
 }
-.block--dark .block__heading {
+.block--dark h1,
+.block--dark h2,
+.block--dark h3 {
   color: #fff;
 }
 .block--skewed-right {
@@ -651,8 +658,41 @@ a {
 /*Features*/
 .features {
   gap: 4rem;
-  margin: 10rem 0;
+  margin: 12rem 0;
+}
+.features:first-of-type {
+  margin-top: 6rem;
 }
 .image__feature {
   width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .features:nth-of-type(even) .feature__content {
+    order: 2;
+  }
+}
+/*Showcase*/
+.block-showcase__image > img {
+  width: 100%;
+}
+.block-showcase .block__header {
+  margin-bottom: 6rem;
+}
+.block-showcase__content .media {
+  margin-left: 1rem;
+  margin-bottom: 6rem;
+}
+
+@media screen and (min-width: 768px) {
+  .block-showcase__image {
+    justify-self: end;
+  }
+  .block-showcase__image > img {
+    width: auto;
+    max-width: 700px;
+  }
+
+  .block-showcase .grid {
+    grid-template-columns: 50% 50%;
+  }
 }
