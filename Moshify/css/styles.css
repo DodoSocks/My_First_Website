@@ -173,8 +173,9 @@ a {
   font-size: 1.8rem;
   font-weight: 600;
   margin-top: 1rem;
-  padding: 2rem 3rem;
+  padding: 2rem 4vh;
   text-align: center;
+  transition: all 0.3s;
 }
 .btn .icon {
   width: 2rem;
@@ -244,6 +245,7 @@ a {
   border: 0;
   flex-grow: 1;
   padding: 1.5rem 2rem;
+  width: 0;
 }
 .input-group .btn {
   margin: 4px;
@@ -617,6 +619,9 @@ a {
 .hero__image {
   width: 100%;
 }
+.hero h1 {
+  line-height: 8rem;
+}
 @media screen and (min-width: 768px) {
   .hero {
     padding-top: 0;
@@ -638,13 +643,14 @@ a {
 }
 .block-domain__prices {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   font-weight: 600;
   justify-items: center;
   max-width: 768px;
   margin: 0 auto;
 }
+
 @media screen and (min-width: 768px) {
   .block-domain__prices {
     grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
@@ -652,7 +658,7 @@ a {
 }
 /*Plans_block*/
 .block-plans .grid {
-  gap: 8rem 5rem;
+  gap: 9rem 5rem;
 }
 .block-plans .card {
   max-width: 500px;
