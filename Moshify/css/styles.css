@@ -442,6 +442,9 @@ a {
   top: 3rem;
   right: -32px;
 }
+.block-testimonial h2 {
+  margin: 0;
+}
 @media screen and (min-width: 768px) {
   .testimonial .quote,
   .testimonial .quote__author {
